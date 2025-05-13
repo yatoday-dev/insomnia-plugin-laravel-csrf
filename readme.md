@@ -1,5 +1,15 @@
-# Insomnia Laravel CSRF Plugin
+# Insomnia Plugin - Laravel Sanctum
 
-The insomnia plugin for setting X-XSRF-TOKEN header in request from XSRF-TOKEN cookie in laravel applications.
+Set the XSRF-TOKEN header in Laravel applications using Sanctum.
 
-This repository is a fork of the original repository to support the latest version of Insomnia.
+## Instructions
+
+1. Add `/sanctum/csrf-cookie` endpoint to your Insomnia project to get the cookie first.
+2. Add the `X-XSRF-TOKEN` header to your requests. As the value, set Laravel Sanctum Header (see screenshot).
+
+
+![Alt text](insomnia-screen.png?raw=True)
+
+## Attributions
+
+Original code from `chivincent-rosetta/insomnia-plugin-laravel-csrf`, but repository no longer available.
